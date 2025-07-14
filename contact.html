@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Quvasoy Oromgohi</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/contact.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Quvasoy Oromgohi</a>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-link">Главная</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="schedule.html" class="navbar-link">Расписание</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="contact.html" class="navbar-link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1>Контакты и регистрация</h1>
+            <p>Как связаться с нами и зарегистрироваться на следующий сезон</p>
+            <a href="#registration" class="cta-button">Форма регистрации</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact-section">
+            <div class="content">
+                <h2>Наши контакты</h2>
+
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>Адрес</h3>
+                        <p>Ферганская область, г. Кувасай, ул. Оромгох, 123</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Телефон</h3>
+                        <p>+998 99 123 45 67</p>
+                        <p>+998 99 765 43 21</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Email</h3>
+                        <p>info@quvasoyoromgohi.uz</p>
+                        <p>registration@quvasoyoromgohi.uz</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Социальные сети</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Telegram</a>
+                            <a href="#" class="social-link">Instagram</a>
+                            <a href="#" class="social-link">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="registration" class="registration-section">
+            <div class="content">
+                <h2>Форма регистрации</h2>
+                <form class="registration-form">
+                    <div class="form-group">
+                        <label for="name">ФИО ребенка</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Возраст</label>
+                        <input type="number" id="age" name="age" min="7" max="17" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="parent">ФИО родителя/опекуна</label>
+                        <input type="text" id="parent" name="parent" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Контактный телефон</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="season">Предпочтительный сезон</label>
+                        <select id="season" name="season" required>
+                            <option value="">Выберите сезон</option>
+                            <option value="summer1">Лето 1 сезон (июнь)</option>
+                            <option value="summer2">Лето 2 сезон (июль)</option>
+                            <option value="summer3">Лето 3 сезон (август)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Дополнительная информация</label>
+                        <textarea id="comments" name="comments" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Отправить заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Quvasoy Oromgohi. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script src="./script/index.js"></script>
+    <script src="./script/contact.js"></script>
+</body>
+
+</html>
