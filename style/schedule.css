@@ -1,77 +1,115 @@
-/* Schedule Page Styles */
+/* Schedule Page Styles – Updated & Improved */
+:root {
+  --black: #1f1f1f;
+  --white: #ffffff;
+  --gray-light: #f0f2f5;
+  --gray-medium: #7a7a7a;
+  --accent: #2e86de;
+  --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
 .schedule-section {
-  padding: 60px 0;
+  padding: 80px 20px;
+  background-color: #ffffff;
 }
 
 .schedule-day {
-  margin-bottom: 40px;
-  border-bottom: 1px solid var(--gray-light);
-  padding-bottom: 30px;
+  margin-bottom: 50px;
+  padding: 30px;
+  background: var(--gray-light);
+  border-radius: 12px;
+  box-shadow: var(--shadow-light);
+  transition: transform 0.3s ease;
+}
+
+.schedule-day:hover {
+  transform: translateY(-4px);
 }
 
 .schedule-day h3 {
-  color: var(--black);
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  font-weight: 400;
+  color: var(--accent);
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
 .schedule-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .schedule-list li {
-  padding: 12px 0;
-  border-bottom: 1px dashed var(--gray-light);
+  padding: 14px 0;
+  border-bottom: 1px dashed #ccc;
   display: flex;
   align-items: center;
+  justify-content: start;
+  gap: 20px;
 }
 
 .time {
-  display: inline-block;
-  width: 100px;
+  min-width: 110px;
+  font-weight: 500;
   color: var(--gray-medium);
-  font-weight: 400;
+  background-color: #e6f0ff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
 }
 
 .activities-section {
   background: var(--gray-light);
-  padding: 60px 0;
+  padding: 80px 20px;
+}
+
+.activities-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: var(--black);
 }
 
 .activities-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
-  margin-top: 30px;
 }
 
 .activity-card {
   background: var(--white);
   padding: 30px;
-  border: 1px solid var(--gray-light);
-  transition: transform 0.3s ease;
+  border-radius: 12px;
+  box-shadow: var(--shadow-light);
+  border: 1px solid #e1e4e8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .activity-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 .activity-card h3 {
-  color: var(--black);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  color: var(--accent);
   margin-bottom: 15px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .activity-card p {
   color: var(--gray-medium);
-  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .schedule-day h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .activities-grid {
